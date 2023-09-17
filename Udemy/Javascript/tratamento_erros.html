@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tratamento de Erros</title>
+    <script>
+
+        
+
+      //netflix
+      var video = Array();
+
+      video[1] = Array();
+      video[1]["nome"] = "Titanic";
+      video[1]["ano"] = 1997;
+      video[1]["genero"] = "Drama";
+      video[1]["duracao"] = "2h";
+
+      function getVideo(video) {
+        try {
+          //lógica
+          //http
+          console.log(video[0]["nome"]);
+        } catch (e) {
+          tratarErro(e);
+          console.log("Agora sim podemos tratar esse erro");
+          throw new Error("Mensagem de erro");
+        } finally {
+          console.log("Sempre passa por aqui (try/catch)");
+        }
+
+        console.log("A aplicação não morreu");
+      }
+
+      function tratarErro(e) {
+        //logica para registrar o erro no servidor
+        console.log(e);
+      }
+
+      getVideo(video);
+    </script>
+  </head>
+  <body></body>
+</html>

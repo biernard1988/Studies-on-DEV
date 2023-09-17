@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes em CSS</title>
+    <style>
+        /*usando googlefonts*/
+        @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700,400italic,700italic,400italic,700italic,400,700,400italic,700italic,400italic,700italic);
+        /*fontes externas*/
+        @font-face {
+            font-family: ;
+            src: url() format();
+
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat
+                - svg
+            */
+        }
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+        
+        /*
+        Medidas Absolutas
+        cm, mm, in, px, pt, pc
+
+        Medidas Relativas
+        em (relativo ao tamanho da letra M), ex (relativo ao tamanho da letra x), rem, vw, vh, % (relativo ao % da largura da página)
+        usar sempre: px e em
+        16px - tamanho padrão
+        16px geralmente = 1em
+        
+        ex:
+        font-size: 1em;
+        font-weight: 700;
+        font-style: italic;
+        text-decoration: underline;*/
+        
+        /* shorthand font 
+        font-style -> font-weight -> font-size -> font-family
+        */
+        
+    }
+    h1 {
+        font: italic bolder 3em 'Work Sans', sans-serif;
+    }
+    h2 {
+        font: bold 2em 'Work Sans';
+    }
+        
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim animi
+      aspernatur tempora, dolore hic suscipit ipsa odio unde eos provident magni
+      veniam quia eum dolor, sapiente labore veritatis ab non. Lorem ipsum
+      dolor, sit amet consectetur adipisicing elit. Enim animi aspernatur
+      tempora, dolore hic suscipit ipsa odio unde eos provident magni veniam
+      quia eum dolor, sapiente labore veritatis ab non.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptates
+      quo saepe provident cumque dolore expedita iste ad esse non quam iusto
+      quod voluptate distinctio, ipsa aspernatur. Quos, dolore. Alias.
+      <h2>Subtitulo do exercício</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsam hic itaque quos distinctio magni voluptatum, consequuntur earum quasi in laboriosam, dicta debitis quae saepe numquam atque autem iure fugiat.</p>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eventos Mouse</title>
+    <script>
+      function acao1() {
+        alert("Elemento foi clicado!");
+      }
+      function acao2() {
+        alert("O cursor do mouse deixou a região do elemento!");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- eventos: onclick,ondblclick,onmouseover,onmouseleave etc.  -->
+    <!-- <div
+      onclick="acao()"
+      style="background: #ccc; height: 50px; width
+    50px"
+    ></div> 
+    <br />-->
+    <div
+      onclick="acao1()"
+      onmouseout="acao2()"
+      style="background: #ccc; height: 50px; width
+    50px"
+    ></div>
+  </body>
+</html>

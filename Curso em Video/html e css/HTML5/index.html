@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="shortcut icon" href="favicon2.ico">
+    <title>Exercícios gerais HTML</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+
+    <hr> <!--linha horizontal-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, labore architecto? Nesciunt ullam error doloremque aliquam, deserunt totam sint molestias cum enim aut omnis sequi tenetur. Repellat magnam quis unde.</p>
+<br>
+    &lt; &gt; <!-- MENOR QUE / MAIOR QUE-->
+
+    &reg; <!-- marca registarda-->
+    &copy; <!-- copyright -->
+    &trade;<!---trademark-->
+    &euro;
+    &pound;
+    &uparrow;
+    &downarrow;
+    &DownArrowBar;
+
+    <p>Vamos adicionar alguns emoji: &#x1F601 &#x1F969 &#x1F1F7 </p>
+
+    <p>JPEG<!--compactação--> PNG <!--transparencia e qualidade--></p> 
+    <!-- sempre comprimidos, transparentes e dimensão menor-->
+    <img src="logos-css-html200.png" alt="Logo CSS e HTML5">
+
+    <h1>Listas OL e UL</h1>
+    <br>
+
+    <h2>Listas ordenadas</h2>
+        <ol type="I"> <!--A a I i 1-->
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <!--/li é opcional-->
+        </ol>
+<br>
+
+    <h2>Listas não ordenadas</h2>
+        <ul type="square"> <!-- circle, disc or square-->
+            <li>pão</li>
+            <li>leite</li>
+            <li>feijão</li>
+            <li>arroz</li>
+            <li>manteiga</li>
+        </ul>
+<br>
+
+    <h2>Juntando listas versão 1.0</h2>
+        <ol>
+            <li>Antigas</li>
+            <ol type="a">
+                <li>clipper</li>
+                <li>visual basic</li>
+                <li>fortran</li>
+            </ol>
+            <li>Novas</li>
+            <ol type="a" start="5">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>Javascript</li>
+            </ol>
+        </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="circle">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>Playstation</li>
+        <ul type="disc">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <br>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do desing de um site.</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+    <br>
+
+    <h1>Usanso Link externos</h1>
+    <p>Voce pode acessar o <a href="https://gustavoguanabara.github.io/" type="_blank" rel="external">meu repositorio publico no GitHub</a></p>
+    <p>Voce tambem pode acessar <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">meu canal gratuito no Youtube</a></p>
+    <br>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também <a href="page02.html" rel="next" target="_self">a minha segunda página.</a></p>
+    <p>Voce tambem pode acessar a nossa <a href="noticias/page03.html" rel="next" target="_self">pagina de noticias</a></p>
+
+    <br>
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="Livro/01 - História da Internet.pdf" download="História da Internet.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="Livro/01 - História da Internet.pdf.zip" download="01 - História da Internet.pdf.zip" type="application/zip">Livro em ZIP</a></li>
+    </ul>
+
+    <h1>Imagem dinâmica</h1>
+    
+    <picture><!--a ordem tem de ser crescente para funcionar-->
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <!-- MP3 WAV OGG-->
+    <!--<audio src="audios/happy-mistake.mp3" controls autoplay></audio>-->
+
+    <!--caso não funcione o método de cima-->
+    <audio preload="metadata" autoplay controls>
+        <source src="audios/guanacast-33.mp3" type="audio/mpeg">
+        <source src="audios/guanacast-33.mp3" type="audio/ogg">
+        <source src="audios/guanacast-33.mp3" type="audio/wav">
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="audios/guanacast-33.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+
+    <h1>Inseriondo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="audios/carro.mp4" height="315px" poster="capa-video.jpg" controls></video>
+
+    <!--Mesmo método para compatibilidade
+        <source src="..." type="video/mpeg">
+        <source src="..." type="video/webm">
+        <source src="..." type="video/ogg">
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="...">Clique aqui para baixar o arquivo</a></p>-->
+
+    <h1>Inserindo videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wkDyDS9tGpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

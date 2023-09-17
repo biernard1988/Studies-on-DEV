@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora de Massa Corporal</title>
+    <script>
+      let nome = prompt("Digite seu nome");
+      let altura = prompt("Digite sua altura");
+      let peso = prompt("Digite seu peso");
+
+      altura = parseFloat(altura);
+      peso = parseFloat(peso);
+      altura = altura / 100;
+      let M = peso / (altura * altura);//Massa corporal
+      let resultado = "";
+
+      if (M < 16) {
+        resultado = "Baixo peso muito grave";
+      } else if (M >= 16 && M <= 16.99) {
+        resultado = "Baixo peso grave";
+      } else if (M >= 17 && M <= 18.49) {
+        resultado = "Baixo peso";
+      } else if (M >= 18.5 && M <= 24.99) {
+        resultado = "Peso normal";
+      } else if (M >= 25 && M <= 29.99) {
+        resultado = "Sobrepeso";
+      } else if (M >= 30 && M <= 34.99) {
+        resultado = "Obesidade I";
+      } else if (M >= 35 && M <= 39.99) {
+        resultado = "Obesidade II";
+      } else if (M >= 40) {
+        resultado = "Obesidade III";
+      }
+      document.write(
+        `Olá ${nome}, seu IMC é ${M} e sendo classificado como: ${resultado}`
+      );
+    </script>
+  </head>
+
+  <body></body>
+</html>

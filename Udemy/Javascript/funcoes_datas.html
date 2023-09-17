@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Funções Datas</title>
+    <script>
+      /* var data = new Date();
+
+      document.write(
+        data.getDate() +
+          "/" +
+          data.getMonth() +
+          "/" +
+          data.getFullYear() +
+          "<br>"
+      );
+      document.write(
+        data.getHours() +
+          ":" +
+          data.getMinutes() +
+          ":" +
+          data.getSeconds() +
+          "<br>"
+      );
+      document.write(data.getDay() + "<br>");
+      document.write(data.getFullYear() + "<br>");
+      document.write(data.getMonth() + "<br>");
+      document.write(data.getDate() + "<br>");
+      document.write(data.getHours() + "<br>");
+      document.write(data.getMinutes() + "<br>");
+      document.write(data.getSeconds() + "<br>"); 
+
+      //adicionar / remover dias
+      document.write(data.toString());
+      data.setDate(data.getDate() + 1);
+      document.write("<hr/>");
+      document.write(data.toString());
+      document.write("<br/><br/><hr/>");
+      //adicionar / remover meses
+      document.write(data.toString());
+      data.setMonth(data.getMonth() + 5);
+      document.write("<hr/>");
+      document.write(data.toString());
+      //adicionar / remover anos
+      document.write(data.toString());
+      data.setFullYear(data.getFullYear() + 5);
+      document.write("<hr/>");
+      document.write(data.toString());*/
+
+      //15/01/2023
+      var data1 = new Date(2023, 0, 15);
+
+      //23/02/2023
+      var data2 = new Date(2023, 1, 23);
+
+      document.write(data1.toString());
+      document.write("<hr/>");
+      document.write(data2.toString());
+
+      document.write("<br/><br/><hr/>");
+
+      //converter datas para algo que possamos calcular
+
+      document.write(data1.getTime());
+      document.write("<hr/>");
+      document.write(data2.getTime());
+
+      document.write("<br/><br/><hr/>");
+      //encontrar quantidade de milisegundos entre data1 e data2
+      var milisegundos_entre_datas = Math.abs(
+        data1.getTime() - data2.getTime()
+      );
+      document.write(milisegundos_entre_datas);
+
+      document.write("<br/><br/><hr/>");
+
+      var milisegundos_por_dia = 1 * 24 * 60 * 60 * 1000;
+      //quantos milisegundos existem em um dia?
+      document.write("1 dia tem: " + milisegundos_por_dia + " milisegundos");
+
+      document.write("<br/><br/><hr/>");
+      document.write(
+        "A diferença entre data1 e data2 é de " +
+          milisegundos_entre_datas / milisegundos_por_dia +
+          " dia(s)"
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

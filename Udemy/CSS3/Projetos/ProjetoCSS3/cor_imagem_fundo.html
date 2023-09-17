@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Cor e imagem de fundo</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		/*
+		.fundo {
+			background: darkred;
+		}*/
+
+		h1 {
+			/*background-image: url('imagens/yoshi.png')*/
+			/* repeat-x(horizontal), repeat-y(vertical), no-repeat,repeat */
+			background-repeat: no-repeat;
+
+			/*scrool, fixed*/
+			background-attachment: fixed;
+
+			/*primeiro valor: lef, center, right
+			segundo valor: top, center, bottom*/
+			background-position: center center;
+		}
+
+		.fundo{
+			background: blue url('imagens/yoshi.png') repeat-x scroll left top;
+		}
+
+
+	</style>
+</head>
+<body class="fundo">
+
+	<h1>Conteúdo de titulo 1</h1>
+	<p>Aosdoasoda doadoa aodasodaosdsaodaos odaosdaosdoa aodoasdoa aodsoadoa</p>
+
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+
+	<p>Aosdoasoda doadoa aodasodaosdsaodaos odaosdaosdoa aodoasdoa aodsoadoa</p>
+
+	
+
+</body>
+</html>

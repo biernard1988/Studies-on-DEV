@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+body {
+  height: 1000vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+nav > ul {
+  /* display: flex;
+  height: 30px; */
+}
+
+main {
+  border: 1px solid red;
+}
+
+.aboutus {
+  height: 100vh;
+  background-image: url(./aboutus.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.aboutus-container {
+  /* border: 1px solid red; */
+  width: 50%;
+
+  position: relative;
+  left: 37%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1.title_about {
+  text-align: center;
+  font-size: 3.5em;
+  letter-spacing: 1.6rem;
+}
+
+.aboutus-container > p {
+  padding-top: 10%;
+}
+
+p {
+  max-width: 250px;
+  font-size: 0.9rem;
+}
+.second_paragraph {
+  /* border: 1px solid red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 5%;
+  left: 1%;
+  height: 29%;
+  max-width: 250px;
+}
+
+.second_paragraph > p {
+  text-align: justify;
+  max-width: 190px;
+}
+
+div.history {
+  background-image: url(./history.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container_history {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 50%;
+  position: relative;
+  left: 37%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

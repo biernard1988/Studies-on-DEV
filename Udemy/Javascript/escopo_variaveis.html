@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Escopo de variáveis</title>
+    <script>
+      //3 escopos: global, função e bloco
+      //global: não tem acesso aos especificos da função/somente bloco e vice versa
+      //função e bloco: vizualizam funções da global
+
+      var serie = "Friends";
+
+      //escopo de bloco
+      if (true) {
+        var serie2 = "Game of Thrones";
+        document.write(serie);
+      }
+
+      document.write(serie2);
+      document.write("<br>");
+
+      //escopo de função
+      function x() {
+
+        var serie3 = 'The Walking Dead'
+        document.write(serie);
+        document.write(serie2);
+      }
+
+      x();
+      document.write("<br>");
+      document.wrire(serie3);//ex: serie3 não tem print
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Each</title>
+    <script>
+      var listaFuncionarios = ["Viviane", "Miguel", "Suzy", "Marcos", "José"];
+
+      var f = function(valor, indice) {
+        console.log(valor, indice);
+      };
+
+      listaFuncionarios.forEach(f)
+      
+
+      /* console.log(listaFuncionarios);
+      document.write(listaFuncionarios[3]);
+
+      listaFuncionarios.forEach(function (valor, indice, array) {
+        console.log("indice: " + indice + " | valor: " + valor);
+
+        if (valor == "Marcos") {
+          array[indice] = "Um novo valor";
+        }
+      });
+
+      console.log(listaFuncionarios);
+      document.write("<br>" + listaFuncionarios[3]); */
+    </script>
+  </head>
+  <body></body>
+</html>

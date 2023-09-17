@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOM - Screen</title>
+    <!-- Browser Object Model -->
+    <script>
+      var altura = window.screen.availHeight;
+      var largura = window.screen.availWidth;
+
+      //document.write("<p>Altura do navegador é: " + altura + "</p>");
+      //document.write("<p>Largura do navegador é: " + largura + "</p>");
+
+      if(largura < 500){
+        document.write("<p>Navegador tem dimensões mobile</p>");
+      } else {
+        document.write("<p>Navegador tem dimensões web</p>");
+      }
+
+      /* consultar os variados métodos no site: https://www.w3schools.com/jsref/obj_screen.asp */
+    </script>
+  </head>
+  <body></body>
+</html>

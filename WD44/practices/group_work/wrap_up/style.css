@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Pathway+Gothic+One&family=Yrsa:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Yrsa", serif;
+  text-align: center;
+}
+
+body {
+  margin: 2rem;
+  z-index: 0;
+}
+
+header {
+  background-color: darkgray;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 2px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+ul li a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 1.563rem;
+  font-weight: 900;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+main {
+  padding-top: 70px;
+}
+
+p {
+  margin: auto;
+  text-align: left;
+  text-justify: justify;
+  text-align-last: none;
+}
+
+h1 {
+  font-family: "Pathway Gothic One", sans-serif;
+  margin: 15px 0;
+  text-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.774);
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Marcellus", serif;
+  margin: 10px 0;
+}
+
+img {
+  margin: 10px;
+  border-radius: 7px;
+  width: 100%;
+}
+
+form .inputfield {
+  border-radius: 10px;
+}
+
+button {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  a {
+    color: red;
+    font-size: 0.8rem;
+  }
+}

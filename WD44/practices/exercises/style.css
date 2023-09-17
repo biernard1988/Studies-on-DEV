@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(./bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  color: #000;
+  font-size: 30px; /* 1.875em */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+header .navigation a {
+  color: #000;
+
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+
+header .navigation a:not(:last-child) {
+  margin-right: 30px;
+  /* a ultima opção do nav não é modificada com a margem */
+}
+
+header .navigation a:hover {
+  background: #fff;
+}
+
+.content {
+  max-width: 650px;
+  margin: 60px 100px;
+}
+
+.content .info h2 {
+  color: #124352;
+  font-size: 55px; /* 3.4375em */
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content .info h2 span {
+  color: #fff;
+  font-size: 50px; /* 3.125em  */
+  font-weight: 600;
+}
+
+.content .info p {
+  color: whitesmoke;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.842);
+  font-size: 16px; /* 1em */
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.content .info-btn {
+  color: white;
+  background: #124352;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.content .info-btn:hover {
+  background: #10657a;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.media-icons a {
+  position: relative;
+  color: #111;
+  font-size: 25px; /* 1.5625em */
+  transition: 0.3s;
+  transition-property: transform;
+  /* efeito de transição para o zoom */
+}
+
+.media-icons a:not(:last-child) {
+  margin-right: 60px;
+}
+
+.media-icons a:hover {
+  transform: scale(1.5);
+  /* efeito de zoom */
+}
+
+label {
+  display: none;
+  /* para esconder o menu */
+}
+
+#check {
+  z-index: 3;
+  display: none;
+  /* para ficar em frente ao menu 3 posição */
+}
+
+/* estilo para o menu responsivo  */
+
+@media (max-width: 960px) {
+  header .navigation {
+    display: none;
+    /* para esconder o menu/barra de navegação */
+  }
+
+  label {
+    display: block;
+    /* para mostrar o menu quando tiver menor que 960px */
+    font-size: 25px; /* 1.5625em */
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+  }
+
+  label:hover {
+    color: #fff;
+  }
+
+  label .close-btn {
+    display: none;
+    /* para esconder o botão de fechar quando tiver menor que 960px */
+  }
+
+  #check:checked ~ header .navigation {
+    z-index: 2; /* para ficar em frente ao menu 2 posição */
+    position: fixed;
+    background: #123852e0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* efeito para mostrar o menu dropdown quando tiver menor que 960px ao clicar em cima */
+  }
+
+  #check:checked ~ header .navigation a {
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
+
+  #check:checked ~ header label .menu-btn {
+    display: none;
+    /* para mostrar o menu ao clicar quando tiver menor que 960px */
+  }
+
+  #check:checked ~ header label .close-btn {
+    z-index: 2;
+    display: block;
+    position: fixed;
+    /* para mostrar o icone de fechar o menu */
+  }
+
+  label .menu-btn {
+    position: absolute;
+  }
+
+  header .logo {
+    position: absolute;
+    bottom: -6px;
+    /* alinhar o logo quando tiver menor que 960px */
+  }
+
+  .content .info h2 {
+    font-size: 45px; /* 2.8125em */
+    line-height: 50px;
+  }
+
+  .content .info h2 span {
+    font-size: 40px; /* 2.5em */
+    font-weight: 600;
+  }
+
+  .content .info p {
+    font-size: 14px; /* 0.875em */
+  }
+}
+
+@media (max-width: 560px) {
+  .content .info h2 {
+    font-size: 35px; /* 2.1875em */
+    line-height: 40px;
+  }
+
+  .content .info h2 span {
+    font-size: 30px; /* 1.875em */
+    font-weight: 600;
+  }
+
+  .content .info p {
+    font-size: 14px; /* 0.875em */
+  }
+}

@@ -1,0 +1,112 @@
+/*#caixa {
+	width: 300px;
+	height: 300px;
+	padding: 8px;
+	margin: 20px;
+	background: #009670;
+	box-shadow: 20px 20px 10px 20px black; caixa sombreada com efeito blur(3o digito)
+}
+
+#caixa h1{
+	color: white;
+	text-shadow: 0px 10px black;
+	text-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5); opacidade da sombra
+}
+
+
+
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: url("../imagens/camera.png");
+	background: linear-gradient(96deg,red, green, yellow, blue); degradê de cores to right/left/bottom/top ou deg(degrees)
+	background: radial-gradient(red,green, yellow);
+}
+
+
+#caixa h1 {
+	background: rgb(255, 255, 255, 0.8);  transparencia
+}
+
+
+
+#caixa {
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	-moz-border-radius: 10px 50px 80px 100px;
+	-webkit-border-radius: 10px 50px 80px 100px;;
+	border-radius: 10px 50px 80px 100px;/*arredondar caixas
+}
+
+#caixa2 {
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	
+	
+	-moz-border-radius: 10px 50px 80px 100px;
+	-webkit-border-radius: 10px 50px 80px 100px;;
+	border-radius: 10px 50px 80px 100px; arredondar caixas
+}*/
+
+
+
+
+/**** ANIMAÇÕES ******/
+
+/*@keyframes animacao-caixa { USAR PREFIXOS antes do @
+	from {estado inicial
+		background: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+	to {estado final
+		background: yellow;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+
+
+#caixa {
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: relative;
+	animation-name: animacao-caixa;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-iteration-count: 25 ;
+	animation-direction: alternate;
+
+	animation: animacao-caixa 5s 3s 2 alternate;USAR PREFIXOS tbm
+}*/
+
+
+
+/*** TRANSIÇÕES ***/
+
+#caixa { /*INCIAL*/
+	width: 300px;
+	height: 300px;
+	background: orange;
+}
+
+#caixa:hover { /*FINAL*/
+	width: 500px;
+	background: yellow;
+	/*transition:width 3s, background 3s; sempre utilizar prefixos para todos os navegadores*/
+	transition: all 3s; /*formato simples*/
+}
+
+
+
