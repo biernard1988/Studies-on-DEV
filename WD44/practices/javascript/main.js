@@ -234,5 +234,96 @@ numbers.forEach((element) => {
 
 //MIN, MAX
 
-console.log(Math.min(9, 11, 55, 22));
+/* console.log(Math.min(9, 11, 55, 22));
 console.log(Math.max(9, 11, 55, 22));
+ */
+
+//SET TIMEOUT
+
+/* const myTimeout = setTimeout(myGreeting, 2000);
+function myGreeting() {
+  console.log("Hello!");
+}
+ */
+
+//SET INTERVAL
+
+/* const myInterval = setInterval(myGreeting, 2000);
+function myGreeting() {
+  console.log("Hello!");
+}
+ */
+
+//ES5 to ES6
+
+// Function 1
+/* function notify(name) {
+  console.log(`${name} is here`);
+} */
+
+/* const notify = (name) => {
+  console.log(`${name} is here`);
+}; */
+
+// Function 2
+/* setTimeout(function () {
+  console.log("1000ms == 1 second");
+}, 1000); */
+
+/* const notify = () => {
+  console.log("1000ms == 1 second");
+};
+ */
+// Do no edit
+/* notify("BOB"); */
+
+// DRY  - Don't repeat yourself
+
+/* document.querySelector(".names").innerHTML += "Bob is here <br />";
+document.querySelector(".names").innerHTML += "John is here <br />";
+document.querySelector(".names").innerHTML += "Sarah is here <br />"; */
+
+/* const notify = (name) => {
+  document.write(`${name} is here <br />`);
+} ;
+
+notify("Bob");
+notify("John");
+notify("Sarah");
+ */
+
+//FIZZBUZZ
+
+/* function fizzbuzz() {
+  for (let i = 1; i <= 34; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+fizzbuzz(); */
+
+//FIBONACCI
+
+function fibonacci() {
+  let a = 0;
+  let b = 1;
+  let c;
+  for (let i = 1; i <= 10; i++) {
+    c = a + b;
+    a = b;
+    b = c;
+    console.log(c);
+  }
+  
+}
+
+fibonacci();
+
