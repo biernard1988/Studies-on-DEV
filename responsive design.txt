@@ -1,0 +1,46 @@
+Revisão: Medidas relativas
+
+Vamos revisar o que você aprendeu:
+
+O conteúdo de um site pode ser dimensionado em relação a outros elementos da página usando medidas relativas.
+
+A unidade de em dimensiona a fonte em relação ao tamanho da fonte de um elemento pai.
+
+A unidade de rem dimensiona a fonte em relação ao tamanho da fonte de um elemento raiz. Esse elemento raiz é o elemento <html>.
+
+As porcentagens são comumente usadas para dimensionar recursos de modelo de caixa, como largura, altura, preenchimento ou margem de um elemento.
+
+Quando as porcentagens são usadas para dimensionar a largura e a altura, os elementos filhos serão dimensionados em relação às dimensões do elemento pai (lembre-se de que as dimensões do elemento pai devem ser definidas primeiro).
+
+As porcentagens podem ser usadas para definir o preenchimento e a margem. O preenchimento e a margem horizontal e vertical são definidos em relação à largura de um elemento pai.
+
+A largura mínima e máxima dos elementos pode ser definida usando min-width e max-width.
+
+A altura mínima e máxima dos elementos pode ser definida usando min-height e max-height.
+
+Quando a altura de uma imagem ou vídeo é definida, sua largura pode ser definida como automática para que a mídia seja dimensionada proporcionalmente. A inversão dessas duas propriedades e valores também produzirá o mesmo resultado.
+
+Uma imagem de fundo de um elemento HTML será dimensionada proporcionalmente quando sua propriedade background-size for definida como cover.
+
+As unidades de medida relativas são a primeira etapa para a incorporação do design responsivo em um site. Quando combinadas com técnicas responsivas mais avançadas, é possível criar uma experiência de usuário perfeita, independentemente do tamanho da tela de um dispositivo.
+
+----------------------------------------------------------------------------------
+
+
+MEDIA QUERY:
+
+Quando um site responde ao tamanho da tela em que é visualizado, ele é chamado de site responsivo.
+
+Você pode escrever consultas de mídia para ajudar com diferentes tamanhos de tela.
+
+Adicionar a tag <meta> viewport ao nosso código nos permite controlar a largura e o dimensionamento da viewport para que ela seja dimensionada e dimensionada corretamente em todos os dispositivos.
+
+As consultas de mídia exigem recursos de mídia. Os recursos de mídia são as condições que devem ser atendidas para renderizar o CSS em uma consulta de mídia.
+
+Os recursos de mídia podem detectar muitos aspectos do navegador de um usuário, inclusive a largura, a altura, a resolução, a orientação e outros aspectos da tela.
+
+O operador and exige que vários recursos de mídia sejam verdadeiros ao mesmo tempo.
+
+Uma lista de recursos de mídia separada por vírgulas exige que apenas um recurso de mídia seja verdadeiro para que o código dentro dele seja aplicado.
+
+A prática recomendada para identificar onde as consultas de mídia devem ser definidas é redimensionar o navegador para determinar onde o conteúdo quebra naturalmente. Os pontos de interrupção naturais são encontrados ao redimensionar o navegador.
