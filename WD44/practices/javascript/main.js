@@ -59,6 +59,81 @@ if (ages[0] > ages[3]) {
   console.log(actor3 + " is older than " + actor1);
 } */
 
+//CALLING FUNCTIONS
+
+/* //Defining the function
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+//Calling the function
+sum(2, 4); // 6 */
+
+//FUNCTION PARAMETERS
+
+// The parameter is name
+/* function sayHello(name) {
+  return `Hello, ${name}!`;
+} */
+
+// FUNCTION EXPRESSIONS
+/* 
+const dog = function() {
+  return 'Woof!';
+} */
+
+// FUNCTIONS
+
+// Defining the function: 
+/* function sum(num1, num2) {
+  return num1 + num2;
+} */
+
+// Calling the function:
+/* sum(3, 6); // 9  */
+
+// ANONYMOUS FUNCTIONS
+
+
+/* const rocketToMars = function() {
+  return 'BOOM!';
+}
+ */
+
+
+
+function icanhaz(presentz) {
+  if (typeof presentz === "string") {
+    console.log(`I can haz ${presentz}?`);
+  } else {
+    console.log("I can haz cheezburger?");
+  }
+  
+}
+
+icanhaz("pizza");
+icanhaz();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //LOOP - FOR
 
 /* for (let i = 20; i >= 0; i--) {
@@ -306,13 +381,16 @@ notify("Sarah");
       console.log(i);
     }
   }
-}
-
+} 
 fizzbuzz(); */
+
+
+
+
 
 //FIBONACCI
 
-function fibonacci() {
+/* function fibonacci() {
   let a = 0;
   let b = 1;
   let c;
@@ -327,3 +405,4 @@ function fibonacci() {
 
 fibonacci();
 
+ */

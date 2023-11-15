@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.input-area {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.App img {
+  border-radius: 5px;
+  border: 1px sold black;
+}
